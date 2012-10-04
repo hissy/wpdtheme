@@ -90,30 +90,7 @@
 						<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 						<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 					<?php endif  ?>
-<?php if ( preg_match("/iPhone|Android/i", $_SERVER['HTTP_USER_AGENT']) ) :?>
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-2866035444666228";
-/* mobile */
-google_ad_slot = "7941700887";
-google_ad_width = 320;
-google_ad_height = 50;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script><?php else: ?>
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-2866035444666228";
-/* サイト名下 */
-google_ad_slot = "2339695504";
-google_ad_width = 728;
-google_ad_height = 15;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-<?php endif; ?>
+					<?php do_action('wpdtheme-ad-header'); ?>
 				</div><!-- end #site-title -->
 
 				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
