@@ -5,6 +5,17 @@
 
 
 /**
+ * Fix Facebook locale setting
+ */
+function filter_facebook_locale($locale){
+	$wp_locale = get_locale();
+	if ( $wp_locale = 'ja' ) $locale = 'ja_JP';
+	return $locale;
+}
+add_filter('fb_locale','filter_facebook_locale');
+
+
+/**
  * Ad Manage
  */
 function wpdtheme_ad_header(){
