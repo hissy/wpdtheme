@@ -75,14 +75,6 @@ google_ad_height = 250;
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=148632075278130";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="fb-like-box" data-href="https://www.facebook.com/pages/WP-D/292801787485325" data-width="292" data-show-faces="true" data-stream="false" data-header="true"></div>
 <?php if(function_exists('related_posts')): ?>
 <div class="related_entries">
